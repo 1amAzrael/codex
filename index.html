@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEX</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/include.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><div class="logo">CODEX</div></a>
+    <div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="html.html">HTML</a>
+    <a href="css.html">CSS</a>
+    <a href="js.html">JAVASCRIPT</a>
+    <a href="contact.html">CONTACT US</a>
+  </div>
+</div>
+
+    </nav>
+    <header>
+        <h1>Welcome to CODEX: Unlock the World of Coding</h1>
+    </header>
+
+    <main>
+        <section class="section slide-right">
+            <div>
+                <h2>Discover Your Coding Potential</h2>
+                <p>Dive into the exciting world of programming with CODEX. Whether you're a beginner or an expert, we have the resources you need to master the art of code.</p>
+            </div>
+
+            <img src="https://i.pinimg.com/564x/83/c4/d2/83c4d218285767ea61c03ed1892c74d5.jpg" alt="">
+            
+            
+        </section>
+
+        <section class="section slide-left">
+            
+            <div>
+                <h2>Learn. Code. Innovate.</h2>
+                <p>At CODEX, we believe in the power of learning through doing. Start coding today and transform your ideas into reality.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/11/eb/c1/11ebc17d29ee2f78d16142a0b3f59ea8.jpg" alt="Learn, Code, Innovate">
+        </section>
+
+        <section class="section slide-right">
+            <div>
+                <h2>Your Coding Journey Begins Here</h2>
+                <p>Join our vibrant community of learners and creators. From HTML to Python, explore a wide range of coding languages and projects tailored to your interests.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/01/fb/74/01fb7433be852ff24d5581a261aa505b.jpg">
+        </section>
+
+        <section class="section slide-left">
+            
+            <div>
+                <h2>Why Choose CODEX?</h2>
+                <ul>
+                    <li>Interactive Lessons: Engaging tutorials and hands-on projects to solidify your skills.</li>
+                    <li>Expert Guidance: Learn from experienced developers and industry professionals.</li>
+                    <li>Community Support: Collaborate and share knowledge with fellow coders.</li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/564x/39/53/17/3953172f82d4ff197e9cd90b53f3d219.jpg" alt="Why Choose CODEX">
+        </section>
+
+        <section class="section slide-right">
+            <div>
+                <h2>Master the Code, Shape the Future</h2>
+                <p>At CODEX, we’re more than just a learning platform. We’re a community dedicated to helping you achieve your coding dreams.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/f4/2a/1b/f42a1b2bfbd37b73e10a8d9c4712bdc3.jpg" alt="Shape the Future">
+        </section>
+
+        <section class="section slide-left">
+            
+            <div>
+                <h2>Start Coding Today!</h2>
+                <p>Join CODEX and gain access to comprehensive courses, real-world projects, and a community that supports your growth.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/76/b1/7e/76b17e5859ad02a2e7ace0c4dfddfd1b.jpg" alt="Start Coding Today">
+        </section>
+
+        <section class="section slide-right">
+            <div>
+                <h2>Empower Your Future with CODEX</h2>
+                <p>Unlock endless possibilities with our structured learning paths and resources. CODEX is here to guide you every step of the way.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/83/c4/d2/83c4d218285767ea61c03ed1892c74d5.jpg" alt="Empower Your Future">
+        </section>
+
+        <section class="section slide-left">
+           
+            <div>
+                <h2>From Zero to Hero</h2>
+                <p>No matter your skill level, CODEX provides a clear path to coding mastery. Start from the basics and climb your way to advanced programming.</p>
+            </div>
+            <img src="https://i.pinimg.com/564x/f7/9d/3f/f79d3f88fba69ecad6b62dddbcb1e8ea.jpg" alt="From Zero to Hero">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CODEX. All rights reserved.</p>
+    </footer> 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll('.section');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('appear');
+            } else {
+                entry.target.classList.remove('appear');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('keydown', function(e) {
+                if (e.keyCode === 123) { // F12 key
+                    document.body.classList.add('inspect-opened');
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>

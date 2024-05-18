@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="./css/include.css">
+    <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><div class="logo">CODEX</div></a>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+              <a href="index.html">Home</a>
+              <a href="js.html">JAVASCRIPT</a>
+              <a href="#learn">LEARN</a>
+              <a href="#topic-tags">TAGS</a>
+              <a href="contact.html">CONTACT US</a>
+            </div>
+          </div>
+    </nav>
+    <section>
+        <h2>WHAT IS JAVASCRIPT</h2>
+        <p>JavaScript is a scripting language initially designed for web development. It allows developers to add interactivity and behavior to web pages. Unlike HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets), which are primarily used for structure and styling, respectively, JavaScript enables dynamic content manipulation and interaction with users.</p>
+    </section>
+    <section>
+        <h2>WHY JAVASCRIPT</h2>
+        <ul>
+            <li><strong>Adding interactivity to web pages:</strong> JavaScript enables developers to create interactive elements on web pages, such as buttons, forms, and animations, allowing for a more engaging user experience.</li>
+            <li><strong>Client-side scripting for dynamic content:</strong> With JavaScript, dynamic content can be generated and manipulated directly within the user's browser without requiring a round trip to the server, resulting in faster and more responsive web applications.</li>
+            <li><strong>Web application development:</strong> JavaScript is widely used for building modern web applications, including single-page applications (SPAs), where most of the application logic runs on the client side, providing a smoother and more seamless user experience.</li>
+            <li><strong>Game development:</strong> JavaScript can be used to develop browser-based games, ranging from simple puzzle games to complex multiplayer experiences, leveraging HTML5 canvas and WebGL for graphics rendering.</li>
+            <li><strong>Server-side scripting with technologies like Node.js:</strong> With the advent of Node.js, JavaScript can now be used for server-side scripting, allowing developers to build scalable and high-performance web servers and applications using JavaScript on both the client and server sides.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>FEATURES</h2>
+        <ul>
+            <li><strong>Versatility:</strong> JavaScript can be used for a wide range of tasks, from simple scripting to complex application development, making it a versatile language for web development.</li>
+            <li><strong>Interactivity:</strong> JavaScript enables developers to create interactive elements on web pages that respond to user actions, such as clicks, mouse movements, and keystrokes, enhancing user engagement and experience.</li>
+            <li><strong>Asynchronous programming:</strong> JavaScript supports asynchronous programming, allowing tasks to execute independently without blocking the main thread, which is crucial for building responsive and efficient web applications.</li>
+            <li><strong>DOM manipulation:</strong> JavaScript provides APIs for manipulating the Document Object Model (DOM), allowing developers to dynamically change the content, structure, and style of web pages in response to user actions, enabling dynamic and interactive user interfaces.</li>
+            <li><strong>Community support:</strong> JavaScript has a large and active community of developers, with numerous libraries, frameworks, and resources available to aid in development, making it easier for developers to learn, collaborate, and build robust web applications.</li>
+            <li><strong>Cross-platform compatibility:</strong> JavaScript code can run on various platforms and devices, including desktop browsers, mobile browsers, and server environments, making it a versatile choice for web development and ensuring broad accessibility of web applications.</li>
+        </ul>
+    </section>
+    <section id="learn">
+        <h2>MASTER JAVASCRIPT IN THE SINGLE VIDEO</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VlPiVmYuoqw?si=_RWkHOepwZktLfmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </section>
+    <section id="topic-tags">
+        <h2>Topic Tags</h2>
+        <p>JAVASCRIPT consists of various tags that define different elements of a webpage. Below are some commonly used JAVASCRIPT tags along with examples and descriptions:</p>
+        <input type="text" id="searchInput" placeholder="Search...">
+
+        <div class="tag">
+            <h3>1. addEventListener</h3>
+            <p>The addEventListener method is used to attach an event handler to an element.</p>
+            <pre><code>
+        document.getElementById("myButton1").addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+            </code></pre>
+            <p>Example: Click the button to see an alert message.</p>
+            <button id="myButton1">Click Me</button>
+        </div>
+        
+        <div class="tag">
+            <h3>2. querySelector</h3>
+            <p>The querySelector method returns the first element that matches a specified CSS selector.</p>
+            <pre><code>
+        const element = document.querySelector(".myClass");
+        element.style.backgroundColor = "yellow";
+            </code></pre>
+            <p>Example: This changes the background color of the first element with class "myClass".</p>
+            <div class="myClass">This is a div with myClass</div>
+        </div>
+        
+        <div class="tag">
+            <h3>3. innerHTML</h3>
+            <p>The innerHTML property sets or returns the HTML content of an element.</p>
+            <pre><code>
+        document.getElementById("myDiv3").innerHTML = "Hello, World!";
+            </code></pre>
+            <p>Example: This changes the content of the div to "Hello, World!".</p>
+            <div id="myDiv3"></div>
+        </div>
+        
+        <div class="tag">
+            <h3>4. setAttribute</h3>
+            <p>The setAttribute method adds the specified attribute to an element, and gives it the specified value.</p>
+            <pre><code>
+        document.getElementById("myImage").setAttribute("src", "image.jpg");
+            </code></pre>
+            <p>Example: This sets the source of an image element to "image.jpg".</p>
+            <img id="myImage" />
+        </div>
+        
+        <div class="tag">
+            <h3>5. createElement</h3>
+            <p>The createElement method creates an HTML element specified by tagName.</p>
+            <pre><code>
+        const newParagraph = document.createElement("p");
+        newParagraph.textContent = "This is a new paragraph.";
+        document.body.appendChild(newParagraph);
+            </code></pre>
+            <p>Example: This creates a new paragraph element and appends it to the body.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>6. classList.add</h3>
+            <p>The classList.add method adds the specified class to an element.</p>
+            <pre><code>
+        document.getElementById("myDiv6").classList.add("newClass");
+            </code></pre>
+            <p>Example: This adds the class "newClass" to the div element.</p>
+            <div id="myDiv6">This is a div</div>
+        </div>
+        
+        <div class="tag">
+            <h3>7. removeChild</h3>
+            <p>The removeChild method removes a specified child node of the specified element.</p>
+            <pre><code>
+        const parentElement = document.getElementById("parent");
+        const childElement = document.getElementById("child");
+        parentElement.removeChild(childElement);
+            </code></pre>
+            <p>Example: This removes the child element from the parent element.</p>
+            <div id="parent">
+                Parent
+                <div id="child">Child</div>
+            </div>
+        </div>
+        
+        <div class="tag">
+            <h3>8. appendChild</h3>
+            <p>The appendChild method appends a node as the last child of a node.</p>
+            <pre><code>
+        const newChild = document.createElement("div");
+        newChild.textContent = "New Child";
+        document.getElementById("parent8").appendChild(newChild);
+            </code></pre>
+            <p>Example: This appends a new child to the parent element.</p>
+            <div id="parent8">Parent</div>
+        </div>
+        
+        <div class="tag">
+            <h3>9. textContent</h3>
+            <p>The textContent property sets or returns the text content of the specified node.</p>
+            <pre><code>
+        document.getElementById("myDiv9").textContent = "Hello, World!";
+            </code></pre>
+            <p>Example: This changes the text content of the div to "Hello, World!".</p>
+            <div id="myDiv9"></div>
+        </div>
+        
+        <div class="tag">
+            <h3>10. style</h3>
+            <p>The style property is used to get or set the inline style of an element.</p>
+            <pre><code>
+        document.getElementById("myDiv10").style.color = "red";
+            </code></pre>
+            <p>Example: This changes the text color of the div to red.</p>
+            <div id="myDiv10">This is a div</div>
+        </div>
+        
+        <div class="tag">
+            <h3>11. addEventListener with mouseover</h3>
+            <p>The addEventListener method is used to attach an event handler to an element.</p>
+            <pre><code>
+        document.getElementById("myDiv11").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "lightblue";
+        });
+            </code></pre>
+            <p>Example: Hover over the div to change its background color to light blue.</p>
+            <div id="myDiv11">Hover over me</div>
+        </div>
+        
+        <div class="tag">
+            <h3>12. addEventListener with mouseout</h3>
+            <p>The addEventListener method is used to attach an event handler to an element.</p>
+            <pre><code>
+        document.getElementById("myDiv12").addEventListener("mouseout", function() {
+            this.style.backgroundColor = "";
+        });
+            </code></pre>
+            <p>Example: Move your mouse away from the div to reset its background color.</p>
+            <div id="myDiv12">Hover over me</div>
+        </div>
+        
+        <div class="tag">
+            <h3>13. addEventListener with keydown</h3>
+            <p>The addEventListener method is used to attach an event handler to an element.</p>
+            <pre><code>
+        document.addEventListener("keydown", function(event) {
+            console.log("Key pressed: " + event.key);
+        });
+            </code></pre>
+            <p>Example: Press any key to log the key pressed to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>14. addEventListener with scroll</h3>
+            <p>The addEventListener method is used to attach an event handler to an element.</p>
+            <pre><code>
+        window.addEventListener("scroll", function() {
+            console.log("Page is scrolling");
+        });
+            </code></pre>
+            <p>Example: Scroll the page to see the log message in the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>15. preventDefault</h3>
+            <p>The preventDefault method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.</p>
+            <pre><code>
+        document.getElementById("myLink").addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Link click prevented!");
+        });
+            </code></pre>
+            <p>Example: Click the link to see the alert message and prevent the default action.</p>
+            <a href="https://example.com" id="myLink">Click Me</a>
+        </div>
+        
+        <div class="tag">
+            <h3>16. stopPropagation</h3>
+            <p>The stopPropagation method prevents further propagation of the current event in the capturing and bubbling phases.</p>
+            <pre><code>
+        document.getElementById("child16").addEventListener("click", function(event) {
+            event.stopPropagation();
+            alert("Child clicked!");
+        });
+        document.getElementById("parent16").addEventListener("click", function() {
+            alert("Parent clicked!");
+        });
+            </code></pre>
+            <p>Example: Click the child div to see the alert message from the child only.</p>
+            <div id="parent16">
+                Parent
+                <div id="child16">Child</div>
+            </div>
+        </div>
+        
+        <div class="tag">
+            <h3>17. getAttribute</h3>
+            <p>The getAttribute method returns the value of a specified attribute on the element.</p>
+            <pre><code>
+        const hrefValue = document.getElementById("myLink17").getAttribute("href");
+        console.log(hrefValue);
+            </code></pre>
+            <p>Example: This logs the href value of the link to the console.</p>
+            <a href="https://example.com" id="myLink17">Click Me</a>
+        </div>
+        
+        <div class="tag">
+            <h3>18. classList.remove</h3>
+            <p>The classList.remove method removes the specified class from an element.</p>
+            <pre><code>
+        document.getElementById("myDiv18").classList.remove("myClass");
+            </code></pre>
+            <p>Example: This removes the class "myClass" from the div element.</p>
+            <div id="myDiv18" class="myClass">This is a div</div>
+        </div>
+        
+        <div class="tag">
+            <h3>19. toggle</h3>
+            <p>The toggle method toggles a class on an element.</p>
+            <pre><code>
+        document.getElementById("myDiv19").classList.toggle("highlight");
+            </code></pre>
+            <p>Example: This toggles the "highlight" class on the div element.</p>
+            <div id="myDiv19" class="highlight">This is a div</div>
+        </div>
+        
+        <div class="tag">
+            <h3>20. contains</h3>
+            <p>The contains method checks if an element has the specified class.</p>
+            <pre><code>
+        const hasClass = document.getElementById("myDiv20").classList.contains("highlight");
+        console.log(hasClass);
+            </code></pre>
+            <p>Example: This logs whether the div has the "highlight" class.</p>
+            <div id="myDiv20" class="highlight">This is a div</div>
+        </div>
+        
+        <!-- Continue for 80 more examples -->
+        
+        <div class="tag">
+            <h3>21. setInterval</h3>
+            <p>The setInterval method calls a function or evaluates an expression at specified intervals (in milliseconds).</p>
+            <pre><code>
+        setInterval(function() {
+            console.log("Interval reached");
+        }, 2000);
+            </code></pre>
+            <p>Example: This logs a message to the console every 2 seconds.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>22. setTimeout</h3>
+            <p>The setTimeout method calls a function or evaluates an expression after a specified number of milliseconds.</p>
+            <pre><code>
+        setTimeout(function() {
+            console.log("Timeout reached");
+        }, 2000);
+            </code></pre>
+            <p>Example: This logs a message to the console after 2 seconds.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>23. clearTimeout</h3>
+            <p>The clearTimeout method clears a timer set with the setTimeout method.</p>
+            <pre><code>
+        const timeoutId = setTimeout(function() {
+            console.log("Timeout reached");
+        }, 2000);
+        clearTimeout(timeoutId);
+            </code></pre>
+            <p>Example: This clears the timeout before it can log a message to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>24. clearInterval</h3>
+            <p>The clearInterval method clears a timer set with the setInterval method.</p>
+            <pre><code>
+        const intervalId = setInterval(function() {
+            console.log("Interval reached");
+        }, 2000);
+        clearInterval(intervalId);
+            </code></pre>
+            <p>Example: This clears the interval before it can log a message to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>25. localStorage.setItem</h3>
+            <p>The localStorage.setItem method stores a value in local storage.</p>
+            <pre><code>
+        localStorage.setItem("key", "value");
+            </code></pre>
+            <p>Example: This stores the value "value" with the key "key" in local storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>26. localStorage.getItem</h3>
+            <p>The localStorage.getItem method retrieves a value from local storage.</p>
+            <pre><code>
+        const value = localStorage.getItem("key");
+        console.log(value);
+            </code></pre>
+            <p>Example: This logs the value stored with the key "key" in local storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>27. localStorage.removeItem</h3>
+            <p>The localStorage.removeItem method removes an item from local storage.</p>
+            <pre><code>
+        localStorage.removeItem("key");
+            </code></pre>
+            <p>Example: This removes the item with the key "key" from local storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>28. localStorage.clear</h3>
+            <p>The localStorage.clear method clears all items from local storage.</p>
+            <pre><code>
+        localStorage.clear();
+            </code></pre>
+            <p>Example: This clears all items from local storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>29. sessionStorage.setItem</h3>
+            <p>The sessionStorage.setItem method stores a value in session storage.</p>
+            <pre><code>
+        sessionStorage.setItem("key", "value");
+            </code></pre>
+            <p>Example: This stores the value "value" with the key "key" in session storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>30. sessionStorage.getItem</h3>
+            <p>The sessionStorage.getItem method retrieves a value from session storage.</p>
+            <pre><code>
+        const value = sessionStorage.getItem("key");
+        console.log(value);
+            </code></pre>
+            <p>Example: This logs the value stored with the key "key" in session storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>31. sessionStorage.removeItem</h3>
+            <p>The sessionStorage.removeItem method removes an item from session storage.</p>
+            <pre><code>
+        sessionStorage.removeItem("key");
+            </code></pre>
+            <p>Example: This removes the item with the key "key" from session storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>32. sessionStorage.clear</h3>
+            <p>The sessionStorage.clear method clears all items from session storage.</p>
+            <pre><code>
+        sessionStorage.clear();
+            </code></pre>
+            <p>Example: This clears all items from session storage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>33. JSON.stringify</h3>
+            <p>The JSON.stringify method converts a JavaScript object or value to a JSON string.</p>
+            <pre><code>
+        const obj = { name: "John", age: 30 };
+        const jsonString = JSON.stringify(obj);
+        console.log(jsonString);
+            </code></pre>
+            <p>Example: This logs the JSON string representation of the object.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>34. JSON.parse</h3>
+            <p>The JSON.parse method parses a JSON string, constructing the JavaScript value or object described by the string.</p>
+            <pre><code>
+        const jsonString = '{"name":"John","age":30}';
+        const obj = JSON.parse(jsonString);
+        console.log(obj);
+            </code></pre>
+            <p>Example: This logs the JavaScript object representation of the JSON string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>35. fetch</h3>
+            <p>The fetch method starts the process of fetching a resource from the network.</p>
+            <pre><code>
+        fetch("https://api.example.com/data")
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error("Error:", error));
+            </code></pre>
+            <p>Example: This fetches data from the provided URL and logs it to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>36. navigator.geolocation.getCurrentPosition</h3>
+            <p>The getCurrentPosition method retrieves the device's current location.</p>
+            <pre><code>
+        navigator.geolocation.getCurrentPosition(function(position) {
+            console.log("Latitude: " + position.coords.latitude);
+            console.log("Longitude: " + position.coords.longitude);
+        });
+            </code></pre>
+            <p>Example: This logs the device's current latitude and longitude to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>37. document.title</h3>
+            <p>The document.title property sets or returns the title of the document.</p>
+            <pre><code>
+        document.title = "New Title";
+            </code></pre>
+            <p>Example: This changes the document's title to "New Title".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>38. document.cookie</h3>
+            <p>The document.cookie property gets or sets the cookie string of the current document.</p>
+            <pre><code>
+        document.cookie = "username=John Doe";
+            </code></pre>
+            <p>Example: This sets a cookie with the name "username" and the value "John Doe".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>39. Math.random</h3>
+            <p>The Math.random method returns a random number between 0 (inclusive) and 1 (exclusive).</p>
+            <pre><code>
+        const randomNumber = Math.random();
+        console.log(randomNumber);
+            </code></pre>
+            <p>Example: This logs a random number between 0 and 1 to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>40. Math.floor</h3>
+            <p>The Math.floor method returns the largest integer less than or equal to a given number.</p>
+            <pre><code>
+        const number = 4.7;
+        const floorNumber = Math.floor(number);
+        console.log(floorNumber);
+            </code></pre>
+            <p>Example: This logs the largest integer less than or equal to 4.7.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>41. Math.ceil</h3>
+            <p>The Math.ceil method returns the smallest integer greater than or equal to a given number.</p>
+            <pre><code>
+        const number = 4.2;
+        const ceilNumber = Math.ceil(number);
+        console.log(ceilNumber);
+            </code></pre>
+            <p>Example: This logs the smallest integer greater than or equal to 4.2.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>42. Math.round</h3>
+            <p>The Math.round method returns the value of a number rounded to the nearest integer.</p>
+            <pre><code>
+        const number = 4.5;
+        const roundNumber = Math.round(number);
+        console.log(roundNumber);
+            </code></pre>
+            <p>Example: This logs the value of 4.5 rounded to the nearest integer.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>43. Math.max</h3>
+            <p>The Math.max method returns the largest of zero or more numbers.</p>
+            <pre><code>
+        const maxNumber = Math.max(1, 2, 3, 4, 5);
+        console.log(maxNumber);
+            </code></pre>
+            <p>Example: This logs the largest number among the given numbers.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>44. Math.min</h3>
+            <p>The Math.min method returns the smallest of zero or more numbers.</p>
+            <pre><code>
+        const minNumber = Math.min(1, 2, 3, 4, 5);
+        console.log(minNumber);
+            </code></pre>
+            <p>Example: This logs the smallest number among the given numbers.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>45. Array.push</h3>
+            <p>The push method adds one or more elements to the end of an array and returns the new length of the array.</p>
+            <pre><code>
+        const array = [1, 2, 3];
+        array.push(4);
+        console.log(array);
+            </code></pre>
+            <p>Example: This adds the number 4 to the end of the array.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>46. Array.pop</h3>
+            <p>The pop method removes the last element from an array and returns that element.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const lastElement = array.pop();
+        console.log(array);
+        console.log(lastElement);
+            </code></pre>
+            <p>Example: This removes the last element from the array and logs it.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>47. Array.shift</h3>
+            <p>The shift method removes the first element from an array and returns that element.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const firstElement = array.shift();
+        console.log(array);
+        console.log(firstElement);
+            </code></pre>
+            <p>Example: This removes the first element from the array and logs it.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>48. Array.unshift</h3>
+            <p>The unshift method adds one or more elements to the beginning of an array and returns the new length of the array.</p>
+            <pre><code>
+        const array = [2, 3, 4];
+        array.unshift(1);
+        console.log(array);
+            </code></pre>
+            <p>Example: This adds the number 1 to the beginning of the array.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>49. Array.map</h3>
+            <p>The map method creates a new array with the results of calling a provided function on every element in the calling array.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const newArray = array.map(function(element) {
+            return element * 2;
+        });
+        console.log(newArray);
+            </code></pre>
+            <p>Example: This creates a new array with each element multiplied by 2.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>50. Array.filter</h3>
+            <p>The filter method creates a new array with all elements that pass the test implemented by the provided function.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const filteredArray = array.filter(function(element) {
+            return element > 2;
+        });
+        console.log(filteredArray);
+            </code></pre>
+            <p>Example: This creates a new array with elements greater than 2.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>51. Array.reduce</h3>
+            <p>The reduce method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const sum = array.reduce(function(total, current) {
+            return total + current;
+        }, 0);
+        console.log(sum);
+            </code></pre>
+            <p>Example: This calculates the sum of all elements in the array.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>52. Array.forEach</h3>
+            <p>The forEach method executes a provided function once for each array element.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        array.forEach(function(element) {
+            console.log(element);
+        });
+            </code></pre>
+            <p>Example: This logs each element of the array to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>53. Array.find</h3>
+            <p>The find method returns the value of the first element in the array that satisfies the provided testing function.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const foundElement = array.find(function(element) {
+            return element > 2;
+        });
+        console.log(foundElement);
+            </code></pre>
+            <p>Example: This finds the first element in the array that is greater than 2.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>54. Array.includes</h3>
+            <p>The includes method determines whether an array includes a certain value among its entries, returning true or false as appropriate.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const includesElement = array.includes(3);
+        console.log(includesElement);
+            </code></pre>
+            <p>Example: This checks if the array includes the number 3.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>55. Array.indexOf</h3>
+            <p>The indexOf method returns the first index at which a given element can be found in the array, or -1 if it is not present.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const index = array.indexOf(3);
+        console.log(index);
+            </code></pre>
+            <p>Example: This finds the index of the number 3 in the array.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>56. Array.slice</h3>
+            <p>The slice method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included).</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const newArray = array.slice(1, 3);
+        console.log(newArray);
+            </code></pre>
+            <p>Example: This creates a new array with elements from index 1 to 3 (not included).</p>
+        </div>
+        
+        <div class="tag">
+            <h3>57. Array.splice</h3>
+            <p>The splice method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        array.splice(1, 2, "a", "b");
+        console.log(array);
+            </code></pre>
+            <p>Example: This removes 2 elements from index 1 and adds "a" and "b" in their place.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>58. Array.sort</h3>
+            <p>The sort method sorts the elements of an array in place and returns the sorted array.</p>
+            <pre><code>
+        const array = [4, 2, 3, 1];
+        array.sort();
+        console.log(array);
+            </code></pre>
+            <p>Example: This sorts the array in ascending order.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>59. Array.concat</h3>
+            <p>The concat method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.</p>
+            <pre><code>
+        const array1 = [1, 2];
+        const array2 = [3, 4];
+        const newArray = array1.concat(array2);
+        console.log(newArray);
+            </code></pre>
+            <p>Example: This merges two arrays into a new array.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>60. Array.join</h3>
+            <p>The join method joins all elements of an array into a string.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        const joinedString = array.join(", ");
+        console.log(joinedString);
+            </code></pre>
+            <p>Example: This joins all elements of the array into a string separated by ", ".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>61. Array.reverse</h3>
+            <p>The reverse method reverses an array in place. The first array element becomes the last, and the last array element becomes the first.</p>
+            <pre><code>
+        const array = [1, 2, 3, 4];
+        array.reverse();
+        console.log(array);
+            </code></pre>
+            <p>Example: This reverses the order of the array elements.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>62. String.split</h3>
+            <p>The split method splits a String object into an array of strings by separating the string into substrings.</p>
+            <pre><code>
+        const string = "Hello World";
+        const array = string.split(" ");
+        console.log(array);
+            </code></pre>
+            <p>Example: This splits the string into an array of words.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>63. String.toLowerCase</h3>
+            <p>The toLowerCase method returns the calling string value converted to lower case.</p>
+            <pre><code>
+        const string = "Hello World";
+        const lowerCaseString = string.toLowerCase();
+        console.log(lowerCaseString);
+            </code></pre>
+            <p>Example: This converts the string to lower case.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>64. String.toUpperCase</h3>
+            <p>The toUpperCase method returns the calling string value converted to upper case.</p>
+            <pre><code>
+        const string = "Hello World";
+        const upperCaseString = string.toUpperCase();
+        console.log(upperCaseString);
+            </code></pre>
+            <p>Example: This converts the string to upper case.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>65. String.trim</h3>
+            <p>The trim method removes whitespace from both ends of a string.</p>
+            <pre><code>
+        const string = "   Hello World   ";
+        const trimmedString = string.trim();
+        console.log(trimmedString);
+            </code></pre>
+            <p>Example: This removes whitespace from both ends of the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>66. String.includes</h3>
+            <p>The includes method determines whether one string may be found within another string, returning true or false as appropriate.</p>
+            <pre><code>
+        const string = "Hello World";
+        const includesHello = string.includes("Hello");
+        console.log(includesHello);
+            </code></pre>
+            <p>Example: This checks if the string includes the substring "Hello".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>67. String.startsWith</h3>
+            <p>The startsWith method determines whether a string begins with the characters of a specified string, returning true or false as appropriate.</p>
+            <pre><code>
+        const string = "Hello World";
+        const startsWithHello = string.startsWith("Hello");
+        console.log(startsWithHello);
+            </code></pre>
+            <p>Example: This checks if the string starts with the substring "Hello".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>68. String.endsWith</h3>
+            <p>The endsWith method determines whether a string ends with the characters of a specified string, returning true or false as appropriate.</p>
+            <pre><code>
+        const string = "Hello World";
+        const endsWithWorld = string.endsWith("World");
+        console.log(endsWithWorld);
+            </code></pre>
+            <p>Example: This checks if the string ends with the substring "World".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>69. String.charAt</h3>
+            <p>The charAt method returns the character at the specified index in a string.</p>
+            <pre><code>
+        const string = "Hello World";
+        const charAtIndex = string.charAt(6);
+        console.log(charAtIndex);
+            </code></pre>
+            <p>Example: This gets the character at index 6 in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>70. String.charCodeAt</h3>
+            <p>The charCodeAt method returns an integer between 0 and 65535 representing the UTF-16 code unit at the given index.</p>
+            <pre><code>
+        const string = "Hello World";
+        const charCodeAtIndex = string.charCodeAt(6);
+        console.log(charCodeAtIndex);
+            </code></pre>
+            <p>Example: This gets the UTF-16 code unit at index 6 in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>71. String.indexOf</h3>
+            <p>The indexOf method returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</p>
+            <pre><code>
+        const string = "Hello World";
+        const indexOfHello = string.indexOf("Hello");
+        console.log(indexOfHello);
+            </code></pre>
+            <p>Example: This finds the index of the first occurrence of "Hello" in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>72. String.lastIndexOf</h3>
+            <p>The lastIndexOf method returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.</p>
+            <pre><code>
+        const string = "Hello World Hello";
+        const lastIndexOfHello = string.lastIndexOf("Hello");
+        console.log(lastIndexOfHello);
+            </code></pre>
+            <p>Example: This finds the index of the last occurrence of "Hello" in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>73. String.substring</h3>
+            <p>The substring method returns the part of the string between the start and end indexes, or to the end of the string.</p>
+            <pre><code>
+        const string = "Hello World";
+        const substring = string.substring(0, 5);
+        console.log(substring);
+            </code></pre>
+            <p>Example: This extracts the substring from index 0 to 5 from the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>74. String.substr</h3>
+            <p>The substr method returns the part of the string from the start index and a number of characters after it.</p>
+            <pre><code>
+        const string = "Hello World";
+        const substr = string.substr(6, 5);
+        console.log(substr);
+            </code></pre>
+            <p>Example: This extracts 5 characters from the string starting from index 6.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>75. String.replace</h3>
+            <p>The replace method returns a new string with some or all matches of a pattern replaced by a replacement.</p>
+            <pre><code>
+        const string = "Hello World";
+        const newString = string.replace("World", "Universe");
+        console.log(newString);
+            </code></pre>
+            <p>Example: This replaces "World" with "Universe" in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>76. String.replaceAll</h3>
+            <p>The replaceAll method returns a new string with all matches of a pattern replaced by a replacement.</p>
+            <pre><code>
+        const string = "Hello World World";
+        const newString = string.replaceAll("World", "Universe");
+        console.log(newString);
+            </code></pre>
+            <p>Example: This replaces all occurrences of "World" with "Universe" in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>77. String.repeat</h3>
+            <p>The repeat method constructs and returns a new string which contains the specified number of copies of the string on which it was called, concatenated together.</p>
+            <pre><code>
+        const string = "Hello";
+        const repeatedString = string.repeat(3);
+        console.log(repeatedString);
+            </code></pre>
+            <p>Example: This repeats the string "Hello" three times.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>78. RegExp.test</h3>
+            <p>The test method executes a search for a match between a regular expression and a specified string. Returns true or false.</p>
+            <pre><code>
+        const regex = /hello/i;
+        const string = "Hello World";
+        const result = regex.test(string);
+        console.log(result);
+            </code></pre>
+            <p>Example: This tests if the string contains the pattern "hello" (case-insensitive).</p>
+        </div>
+        
+        <div class="tag">
+            <h3>79. RegExp.exec</h3>
+            <p>The exec method executes a search for a match in a specified string. Returns a result array, or null.</p>
+            <pre><code>
+        const regex = /hello/i;
+        const string = "Hello World";
+        const result = regex.exec(string);
+        console.log(result);
+            </code></pre>
+            <p>Example: This executes a search for the pattern "hello" (case-insensitive) in the string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>80. Date.now</h3>
+            <p>The Date.now method returns the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC.</p>
+            <pre><code>
+        const timestamp = Date.now();
+        console.log(timestamp);
+            </code></pre>
+            <p>Example: This logs the current timestamp in milliseconds.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>81. Date.toLocaleString</h3>
+            <p>The toLocaleString method returns a string with a language-sensitive representation of this date.</p>
+            <pre><code>
+        const date = new Date();
+        const localString = date.toLocaleString();
+        console.log(localString);
+            </code></pre>
+            <p>Example: This logs the current date and time in a localized string format.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>82. Date.toISOString</h3>
+            <p>The toISOString method returns a string in simplified extended ISO format (ISO 8601).</p>
+            <pre><code>
+        const date = new Date();
+        const isoString = date.toISOString();
+        console.log(isoString);
+            </code></pre>
+            <p>Example: This logs the current date and time in ISO format.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>83. Date.parse</h3>
+            <p>The Date.parse method parses a string representation of a date, and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.</p>
+            <pre><code>
+        const timestamp = Date.parse("2022-01-01T00:00:00Z");
+        console.log(timestamp);
+            </code></pre>
+            <p>Example: This parses the date string and returns the timestamp.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>84. JSON.parse</h3>
+            <p>The JSON.parse method parses a JSON string, constructing the JavaScript value or object described by the string.</p>
+            <pre><code>
+        const jsonString = '{"name":"John","age":30}';
+        const obj = JSON.parse(jsonString);
+        console.log(obj);
+            </code></pre>
+            <p>Example: This logs the JavaScript object representation of the JSON string.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>85. JSON.stringify</h3>
+            <p>The JSON.stringify method converts a JavaScript object or value to a JSON string.</p>
+            <pre><code>
+        const obj = { name: "John", age: 30 };
+        const jsonString = JSON.stringify(obj);
+        console.log(jsonString);
+            </code></pre>
+            <p>Example: This logs the JSON string representation of the object.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>86. document.createElement</h3>
+            <p>The createElement method creates the HTML element specified by tagName, or an HTMLUnknownElement if tagName isn't recognized.</p>
+            <pre><code>
+        const newDiv = document.createElement("div");
+        console.log(newDiv);
+            </code></pre>
+            <p>Example: This creates a new div element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>87. document.querySelector</h3>
+            <p>The querySelector method returns the first element that is a descendant of the element on which it is invoked that matches the specified group of selectors.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        console.log(element);
+            </code></pre>
+            <p>Example: This selects the first element with the id "myDiv".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>88. document.querySelectorAll</h3>
+            <p>The querySelectorAll method returns a static NodeList representing a list of the document's elements that match the specified group of selectors.</p>
+            <pre><code>
+        const elements = document.querySelectorAll(".myClass");
+        console.log(elements);
+            </code></pre>
+            <p>Example: This selects all elements with the class "myClass".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>89. Element.getAttribute</h3>
+            <p>The getAttribute method returns the value of a specified attribute on the element. If the given attribute does not exist, the value returned will be null or "" (the empty string).</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        const attribute = element.getAttribute("data-value");
+        console.log(attribute);
+            </code></pre>
+            <p>Example: This gets the value of the "data-value" attribute of the selected element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>90. Element.setAttribute</h3>
+            <p>The setAttribute method adds a new attribute or changes the value of an existing attribute on the specified element.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.setAttribute("data-value", "newValue");
+        console.log(element);
+            </code></pre>
+            <p>Example: This sets the "data-value" attribute to "newValue" for the selected element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>91. Element.classList.add</h3>
+            <p>The classList.add method adds the specified class value. If these classes already exist in the element's class attribute, they are ignored.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.classList.add("newClass");
+        console.log(element.className);
+            </code></pre>
+            <p>Example: This adds the class "newClass" to the selected element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>92. Element.classList.remove</h3>
+            <p>The classList.remove method removes the specified class value.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.classList.remove("oldClass");
+        console.log(element.className);
+            </code></pre>
+            <p>Example: This removes the class "oldClass" from the selected element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>93. Element.classList.toggle</h3>
+            <p>The classList.toggle method toggles the specified class value. If the class value is not present, it is added; if it is present, it is removed.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.classList.toggle("toggleClass");
+        console.log(element.className);
+            </code></pre>
+            <p>Example: This toggles the class "toggleClass" for the selected element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>94. Element.innerHTML</h3>
+            <p>The innerHTML property sets or gets the HTML markup contained within the element.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.innerHTML = "<p>New content</p>";
+        console.log(element.innerHTML);
+            </code></pre>
+            <p>Example: This sets the inner HTML of the selected element to a new paragraph.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>95. Element.textContent</h3>
+            <p>The textContent property sets or returns the text content of the specified node, and all its descendants.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.textContent = "New text content";
+        console.log(element.textContent);
+            </code></pre>
+            <p>Example: This sets the text content of the selected element to "New text content".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>96. Element.appendChild</h3>
+            <p>The appendChild method adds a node to the end of the list of children of a specified parent node.</p>
+            <pre><code>
+        const parent = document.querySelector("#myDiv");
+        const newChild = document.createElement("p");
+        newChild.textContent = "New child element";
+        parent.appendChild(newChild);
+        console.log(parent);
+            </code></pre>
+            <p>Example: This appends a new paragraph element as a child to the selected parent element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>97. Element.removeChild</h3>
+            <p>The removeChild method removes a child node from the DOM and returns the removed node.</p>
+            <pre><code>
+        const parent = document.querySelector("#myDiv");
+        const child = document.querySelector("#childElement");
+        parent.removeChild(child);
+        console.log(parent);
+            </code></pre>
+            <p>Example: This removes the child element from the selected parent element.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>98. EventTarget.addEventListener</h3>
+            <p>The addEventListener method sets up a function that will be called whenever the specified event is delivered to the target.</p>
+            <pre><code>
+        const button = document.querySelector("#myButton");
+        button.addEventListener("click", function() {
+            alert("Button was clicked!");
+        });
+            </code></pre>
+            <p>Example: This adds a click event listener to the button that shows an alert when clicked.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>99. EventTarget.removeEventListener</h3>
+            <p>The removeEventListener method removes an event listener that was previously registered with EventTarget.addEventListener.</p>
+            <pre><code>
+        const button = document.querySelector("#myButton");
+        function handleClick() {
+            alert("Button was clicked!");
+        }
+        button.addEventListener("click", handleClick);
+        button.removeEventListener("click", handleClick);
+            </code></pre>
+            <p>Example: This removes the click event listener from the button.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>100. Element.scrollIntoView</h3>
+            <p>The scrollIntoView method scrolls the element into the visible area of the browser window.</p>
+            <pre><code>
+        const element = document.querySelector("#myDiv");
+        element.scrollIntoView();
+            </code></pre>
+            <p>Example: This scrolls the selected element into view.</p>
+        </div>
+        <div class="tag">
+            <h3>101. window.setTimeout</h3>
+            <p>The setTimeout method calls a function or evaluates an expression after a specified number of milliseconds.</p>
+            <pre><code>
+        setTimeout(function() {
+            console.log("This will be logged after 2 seconds.");
+        }, 2000);
+            </code></pre>
+            <p>Example: This logs a message to the console after 2 seconds.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>102. window.setInterval</h3>
+            <p>The setInterval method calls a function or evaluates an expression at specified intervals (in milliseconds).</p>
+            <pre><code>
+        setInterval(function() {
+            console.log("This will be logged every 2 seconds.");
+        }, 2000);
+            </code></pre>
+            <p>Example: This logs a message to the console every 2 seconds.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>103. window.clearTimeout</h3>
+            <p>The clearTimeout method cancels a timeout previously established by calling setTimeout.</p>
+            <pre><code>
+        const timeoutId = setTimeout(function() {
+            console.log("This will not be logged.");
+        }, 2000);
+        clearTimeout(timeoutId);
+            </code></pre>
+            <p>Example: This cancels the timeout, so the message is never logged.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>104. window.clearInterval</h3>
+            <p>The clearInterval method cancels a repeated action which was established by calling setInterval.</p>
+            <pre><code>
+        const intervalId = setInterval(function() {
+            console.log("This will not be logged.");
+        }, 2000);
+        clearInterval(intervalId);
+            </code></pre>
+            <p>Example: This cancels the interval, so the message is never logged.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>105. Promise.then</h3>
+            <p>The then method returns a Promise. It takes up to two arguments: callback functions for the success and failure cases of the Promise.</p>
+            <pre><code>
+        const promise = new Promise(function(resolve, reject) {
+            resolve("Success");
+        });
+        promise.then(function(value) {
+            console.log(value);
+        });
+            </code></pre>
+            <p>Example: This logs "Success" to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>106. Promise.catch</h3>
+            <p>The catch method returns a Promise and deals with rejected cases only.</p>
+            <pre><code>
+        const promise = new Promise(function(resolve, reject) {
+            reject("Error");
+        });
+        promise.catch(function(error) {
+            console.log(error);
+        });
+            </code></pre>
+            <p>Example: This logs "Error" to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>107. Promise.finally</h3>
+            <p>The finally method returns a Promise. When the promise is settled, i.e. either fulfilled or rejected, the specified callback function is executed.</p>
+            <pre><code>
+        const promise = new Promise(function(resolve, reject) {
+            resolve("Success");
+        });
+        promise.finally(function() {
+            console.log("Promise is settled.");
+        });
+            </code></pre>
+            <p>Example: This logs "Promise is settled." after the promise is fulfilled or rejected.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>108. fetch</h3>
+            <p>The fetch method starts the process of fetching a resource from the network, returning a promise which is fulfilled once the response is available.</p>
+            <pre><code>
+        fetch("https://api.example.com/data")
+            .then(response => response.json())
+            .then(data => console.log(data));
+            </code></pre>
+            <p>Example: This fetches data from an API and logs it to the console.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>109. localStorage.setItem</h3>
+            <p>The setItem method adds that key to the storage, or updates that key's value if it already exists.</p>
+            <pre><code>
+        localStorage.setItem("name", "John");
+            </code></pre>
+            <p>Example: This sets the item "name" in localStorage to "John".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>110. localStorage.getItem</h3>
+            <p>The getItem method returns the value of the specified key.</p>
+            <pre><code>
+        const name = localStorage.getItem("name");
+        console.log(name);
+            </code></pre>
+            <p>Example: This retrieves the value of the item "name" from localStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>111. localStorage.removeItem</h3>
+            <p>The removeItem method removes the key from the storage if it exists.</p>
+            <pre><code>
+        localStorage.removeItem("name");
+            </code></pre>
+            <p>Example: This removes the item "name" from localStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>112. localStorage.clear</h3>
+            <p>The clear method clears all keys stored in the localStorage.</p>
+            <pre><code>
+        localStorage.clear();
+            </code></pre>
+            <p>Example: This clears all items from localStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>113. sessionStorage.setItem</h3>
+            <p>The setItem method adds that key to the storage, or updates that key's value if it already exists in the sessionStorage.</p>
+            <pre><code>
+        sessionStorage.setItem("sessionName", "John");
+            </code></pre>
+            <p>Example: This sets the item "sessionName" in sessionStorage to "John".</p>
+        </div>
+        
+        <div class="tag">
+            <h3>114. sessionStorage.getItem</h3>
+            <p>The getItem method returns the value of the specified key from the sessionStorage.</p>
+            <pre><code>
+        const sessionName = sessionStorage.getItem("sessionName");
+        console.log(sessionName);
+            </code></pre>
+            <p>Example: This retrieves the value of the item "sessionName" from sessionStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>115. sessionStorage.removeItem</h3>
+            <p>The removeItem method removes the key from the sessionStorage if it exists.</p>
+            <pre><code>
+        sessionStorage.removeItem("sessionName");
+            </code></pre>
+            <p>Example: This removes the item "sessionName" from sessionStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>116. sessionStorage.clear</h3>
+            <p>The clear method clears all keys stored in the sessionStorage.</p>
+            <pre><code>
+        sessionStorage.clear();
+            </code></pre>
+            <p>Example: This clears all items from sessionStorage.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>117. Math.random</h3>
+            <p>The random method returns a floating-point, pseudo-random number between 0 (inclusive) and 1 (exclusive).</p>
+            <pre><code>
+        const randomNumber = Math.random();
+        console.log(randomNumber);
+            </code></pre>
+            <p>Example: This generates a random number between 0 and 1.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>118. Math.floor</h3>
+            <p>The floor method returns the largest integer less than or equal to a given number.</p>
+            <pre><code>
+        const number = Math.floor(5.95);
+        console.log(number);
+            </code></pre>
+            <p>Example: This rounds down 5.95 to 5.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>119. Math.ceil</h3>
+            <p>The ceil method returns the smallest integer greater than or equal to a given number.</p>
+            <pre><code>
+        const number = Math.ceil(5.05);
+        console.log(number);
+            </code></pre>
+            <p>Example: This rounds up 5.05 to 6.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>120. Math.round</h3>
+            <p>The round method returns the value of a number rounded to the nearest integer.</p>
+            <pre><code>
+        const number = Math.round(5.5);
+        console.log(number);
+            </code></pre>
+            <p>Example: This rounds 5.5 to 6.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>121. Math.max</h3>
+            <p>The max method returns the largest of the zero or more numbers given as input parameters.</p>
+            <pre><code>
+        const maxNumber = Math.max(1, 2, 3);
+        console.log(maxNumber);
+            </code></pre>
+            <p>Example: This finds the largest number among the input parameters.</p>
+        </div>
+        
+        <div class="tag">
+            <h3>122. Math.min</h3>
+            <p>The min method returns the smallest of the zero or more numbers given as input parameters.</p>
+            <pre><code>
+        const minNumber = Math.min(1, 2, 3);
+        console.log(minNumber);
+    </code></pre>
+    <p>Example: This finds the smallest number among the input parameters.</p>
+</div>
+
+<div class="tag">
+    <h3>123. Math.abs</h3>
+    <p>The abs method returns the absolute value of a number.</p>
+    <pre><code>
+const absoluteNumber = Math.abs(-5);
+console.log(absoluteNumber);
+    </code></pre>
+    <p>Example: This returns the absolute value of -5, which is 5.</p>
+</div>
+
+<div class="tag">
+    <h3>124. Math.pow</h3>
+    <p>The pow method returns the base to the exponent power, that is, base^exponent.</p>
+    <pre><code>
+const power = Math.pow(2, 3);
+console.log(power);
+    </code></pre>
+    <p>Example: This returns 2 raised to the power of 3, which is 8.</p>
+</div>
+
+<div class="tag">
+    <h3>125. Math.sqrt</h3>
+    <p>The sqrt method returns the square root of a number.</p>
+    <pre><code>
+const squareRoot = Math.sqrt(16);
+console.log(squareRoot);
+    </code></pre>
+    <p>Example: This returns the square root of 16, which is 4.</p>
+</div>
+
+<div class="tag">
+    <h3>126. Math.log</h3>
+    <p>The log method returns the natural logarithm (base e) of a number.</p>
+    <pre><code>
+const naturalLog = Math.log(Math.E);
+console.log(naturalLog);
+    </code></pre>
+    <p>Example: This returns the natural logarithm of Euler's number (e), which is 1.</p>
+</div>
+
+<div class="tag">
+    <h3>127. Math.exp</h3>
+    <p>The exp method returns Euler's number (e) raised to a power.</p>
+    <pre><code>
+const exponent = Math.exp(1);
+console.log(exponent);
+    </code></pre>
+    <p>Example: This returns Euler's number (e) raised to the power of 1, which is approximately 2.718.</p>
+</div>
+
+<div class="tag">
+    <h3>128. Math.sin</h3>
+    <p>The sin method returns the sine of a number (given in radians).</p>
+    <pre><code>
+const sine = Math.sin(Math.PI / 2);
+console.log(sine);
+    </code></pre>
+    <p>Example: This returns the sine of π/2 (90 degrees), which is 1.</p>
+</div>
+
+<div class="tag">
+    <h3>129. Math.cos</h3>
+    <p>The cos method returns the cosine of a number (given in radians).</p>
+    <pre><code>
+const cosine = Math.cos(0);
+console.log(cosine);
+    </code></pre>
+    <p>Example: This returns the cosine of 0 degrees, which is 1.</p>
+</div>
+
+<div class="tag">
+    <h3>130. Math.tan</h3>
+    <p>The tan method returns the tangent of a number (given in radians).</p>
+    <pre><code>
+const tangent = Math.tan(Math.PI / 4);
+console.log(tangent);
+    </code></pre>
+    <p>Example: This returns the tangent of π/4 (45 degrees), which is approximately 1.</p>
+</div>
+
+<div class="tag">
+    <h3>131. Math.atan</h3>
+    <p>The atan method returns the arctangent (inverse tangent) of a number (in radians).</p>
+    <pre><code>
+const arctangent = Math.atan(1);
+console.log(arctangent);
+    </code></pre>
+    <p>Example: This returns the arctangent of 1, which is approximately π/4.</p>
+</div>
+
+<div class="tag">
+    <h3>132. Math.atan2</h3>
+    <p>The atan2 method returns the arctangent of the quotient of its arguments, where the signs of both arguments are used to determine the quadrant of the result.</p>
+    <pre><code>
+const arctangent2 = Math.atan2(1, 1);
+console.log(arctangent2);
+    </code></pre>
+    <p>Example: This returns the arctangent of the ratio of the first argument (y) to the second argument (x), which is approximately π/4.</p>
+</div>
+
+<div class="tag">
+    <h3>133. console.log</h3>
+    <p>The log method logs a message to the console.</p>
+    <pre><code>
+console.log("Hello, world!");
+    </code></pre>
+    <p>Example: This logs "Hello, world!" to the console.</p>
+</div>
+
+<div class="tag">
+    <h3>134. console.error</h3>
+    <p>The error method logs an error message to the console.</p>
+    <pre><code>
+console.error("An error occurred!");
+    </code></pre>
+    <p>Example: This logs an error message to the console.</p>
+</div>
+
+<div class="tag">
+    <h3>135. console.warn</h3>
+    <p>The warn method logs a warning message to the console.</p>
+    <pre><code>
+console.warn("This is a warning!");
+    </code></pre>
+    <p>Example: This logs a warning message to the console.</p>
+</div>
+
+<div class="tag">
+    <h3>136. console.info</h3>
+    <p>The info method logs an informational message to the console.</p>
+    <pre><code>
+console.info("This is an informational message.");
+    </code></pre>
+    <p>Example: This logs an informational message to the console.</p>
+</div>
+
+<div class="tag">
+    <h3>137. console.table</h3>
+    <p>The table method displays tabular data as a table.</p>
+    <pre><code>
+console.table([
+    { name: "John", age: 30 },
+    { name: "Jane", age: 25 }
+]);
+    </code></pre>
+    <p>Example: This logs tabular data to the console.</p>
+</div>
+
+<div class="tag">
+    <h3>138. console.assert</h3>
+    <p>The assert method writes an error message to the console if the assertion is false.</p>
+    <pre><code>
+console.assert(1 === 2, "This assertion failed!");
+    </code></pre>
+    <p>Example: This asserts that 1 is equal to 2, which is false, and logs an error message.</p>
+</div>
+
+<div class="tag">
+    <h3>139. console.clear</h3>
+    <p>The clear method clears the console.</p>
+    <pre><code>
+console.clear();
+    </code></pre>
+    <p>Example: This clears the console of any existing messages or output.</p>
+</div>
+
+<div class="tag">
+    <h3>140. navigator.userAgent</h3>
+    <p>The userAgent property returns the user agent string for the current browser.</p>
+    <pre><code>
+const userAgent = navigator.userAgent;
+console.log(userAgent);
+    </code></pre>
+    <p>Example: This logs the user agent string of the browser.</p>
+</div>
+
+<div class="tag">
+    <h3>141. navigator.language</h3>
+    <p>The language property returns the preferred language of the user, usually the language of the browser UI.</p>
+    <pre><code>
+const userLanguage = navigator.language;
+console.log(userLanguage);
+    </code></pre>
+    <p>Example: This logs the preferred language of the user.</p>
+</div>
+
+<div class="tag">
+    <h3>142. navigator.platform</h3>
+    <p>The platform property returns the platform on which the browser is running (e.g., "Win32" for Windows).</p>
+    <pre><code>
+const platform = navigator.platform;
+console.log(platform);
+    </code></pre>
+    <p>Example: This logs the platform on which the browser is running.</p>
+</div>
+
+<div class="tag">
+    <h3>143. navigator.onLine</h3>
+    <p>The onLine property returns a boolean value indicating whether the browser is online.</p>
+    <pre><code>
+const isOnline = navigator.onLine;
+console.log(isOnline);
+    </code></pre>
+    <p>Example: This logs whether the browser is currently online.</p>
+</div>
+
+<div class="tag">
+    <h3>144. window.location.href</h3>
+    <p>The href property returns the entire URL of the current page.</p>
+    <pre><code>
+const currentURL = window.location.href;
+console.log(currentURL);
+    </code></pre>
+    <p>Example: This logs the entire URL of the current page.</p>
+</div>
+
+<div class="tag">
+    <h3>145. window.location.hostname</h3>
+    <p>The hostname property returns the domain name of the web host.</p>
+    <pre><code>
+const domainName = window.location.hostname;
+console.log(domainName);
+    </code></pre>
+    <p>Example: This logs the domain name of the web host.</p>
+</div>
+
+<div class="tag">
+    <h3>146. window.location.pathname</h3>
+    <p>The pathname property returns the path name of the current URL.</p>
+    <pre><code>
+const pathName = window.location.pathname;
+console.log(pathName);
+    </code></pre>
+    <p>Example: This logs the path name of the current URL.</p>
+</div>
+
+<div class="tag">
+    <h3>147. window.location.search</h3>
+    <p>The search property returns the query portion of a URL, including the question mark (?).</p>
+    <pre><code>
+const query = window.location.search;
+console.log(query);
+    </code></pre>
+    <p>Example: This logs the query portion of the current URL.</p>
+</div>
+
+<div class="tag">
+    <h3>148. window.location.hash</h3>
+    <p>The hash property returns the anchor portion of a URL, including the hash symbol (#).</p>
+    <pre><code>
+const anchor = window.location.hash;
+console.log(anchor);
+    </code></pre>
+    <p>Example: This logs the anchor portion of the current URL.</p>
+</div>
+
+<div class="tag">
+    <h3>149. window.location.reload</h3>
+    <p>The reload method reloads the current URL, optionally ignoring the cache.</p>
+    <pre><code>
+window.location.reload();
+    </code></pre>
+    <p>Example: This reloads the current page.</p>
+</div>
+
+<div class="tag">
+    <h3>150. window.location.replace</h3>
+    <p>The replace method replaces the current document with a new one, specified by the provided URL.</p>
+    <pre><code>
+window.location.replace("https://www.example.com");
+    </code></pre>
+    <p>Example: This replaces the current document with the one at the specified URL.</p>
+</div>
+
+
+                
+
+
+    </section>
+    <footer>
+        <p>&copy; 2024 CODEX. All rights reserved.</p>
+    </footer> 
+
+    <script src="search.js"></script>
+</body>
+</html>
